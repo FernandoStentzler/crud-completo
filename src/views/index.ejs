@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Api Testes</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Bem Vindo</h1>
+    <p> Welcome to Api Teste </p>
+    <h2>Selecione Um Estado</h2>
+    <select name="" id="">
+      <% states.forEach(state => { %>
+        <option value="<%= state.id %>"><%= state.sigla %> : <%= state.nome %></option>
+      <% }) %>
+    </select>
+  </body>
+</html>
